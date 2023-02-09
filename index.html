@@ -441,13 +441,80 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close-btn" data-modal-close type="button">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./img/icons.svg#icon-modal-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label subtle-text">Name</label>
+            <input
+              type="text"
+              class="modal-input"
+              id="user-name"
+              placeholder="Name"
+              required
+              minlength="3"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label subtle-text">Phone</label>
+            <input
+              type="tel"
+              class="modal-input"
+              id="user-tel"
+              placeholder="Phone"
+              required
+            />
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label subtle-text"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="modal-input"
+              id="user-email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="modal-field">
+            <label for="user-comments" class="modal-label subtle-text"
+              >Comment</label
+            >
+            <textarea
+              name="user-comments"
+              id="user-comments"
+              class="modal-coment modal-input"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              class="modal-check visually-hidden"
+              id="policy"
+              name="policy"
+              type="checkbox"
+              value="true"
+              required
+            />
+            <label class="check-text subtle-text" for="policy">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./img/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp
+              <a class="policy-link" href="">Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" class="modal-submit-button button">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
