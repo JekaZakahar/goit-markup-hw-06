@@ -32,3 +32,10 @@
   letter-spacing: 0.02em;
   color: var(--text-color);
 } -->
+
+<!-- .subtle-text {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--subtle-text-color);
+} -->
